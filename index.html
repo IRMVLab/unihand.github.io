@@ -189,25 +189,24 @@
           <p>
             We use angle and length constraints to optimize the directionality and stabability of predicted hand trajectories.
           </p>
-          <video id="train" autoplay muted loop playsinline height="80%">
+          <video id="train" autoplay muted loop playsinline height="60%">
             <source src="./static/videos/supervision.mp4"
                     type="video/mp4">
           </video>
         </div>
       </div>
-      <!--/ Visual Effects. -->
+      <!--/ Training Strategy. -->
 
-      <!-- Matting. -->
+      <!-- MDSS. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Motion-Driven Selective Scan</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              MDSS is proposed to achieve diffusion denoising under egomotion guidance. 
             </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
+            <video id="matting-video" controls playsinline height="60%">
+              <source src="./static/videos/mdss.mp4"
                       type="video/mp4">
             </video>
           </div>
