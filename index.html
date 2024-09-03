@@ -394,5 +394,21 @@
   </div>
 </footer>
 
+<script>
+  const videos = document.querySelectorAll('video');
+
+  videos[0].addEventListener('play', () => {
+    videos.forEach(video => {
+      if (video.paused) {
+        video.play();
+      }
+    });
+  });
+
+  window.addEventListener('load', () => {
+    videos.forEach(video => video.pause());
+  });
+</script>
+
 </body>
 </html>
