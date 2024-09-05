@@ -149,10 +149,6 @@
 </section>
 
 
-
-  
-  
-
 <section class="section" style="text-align: center;" >
   <h2 class="title is-3" style="text-align: center;">
     MADiff Architecture
@@ -161,14 +157,51 @@
        class="architecture-image"
        alt="architecture-image image."
        style="width: 60%; display: block; margin: 0 auto;"/>
-  <video id="teaser" autoplay muted loop playsinline style="width: 60%; height: auto; max-width: 850px;">
-    <source src="./static/videos/denoising2.mp4" type="video/mp4">
-  </video>
-  <p>
-     Motion-aware Mamba is proposed to gradually denoise latent features in the latent diffusion to predict accurate hand waypoints.
-  </p>
 </section>
 
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+    <!-- Semantic Extraction -->
+      <div class="column">
+        <h2 class="title is-3">Semantic Extraction</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              We use the foundation model for extracting semantic features sensitive to hand-scenario relationships. Visual grounding allows us to use text prompt to achieve task-specific. 
+            </p>
+            <video id="mdss" autoplay muted loop playsinline height="60%">
+              <source src="./static/videos/mdss.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    <!--/ MDSS. -->
+    
+      <!-- Denoising to Future Trajectories -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Denoising to Future Trajectories</h2>
+          <p>
+            Motion-aware Mamba is proposed to gradually denoise latent features in the latent diffusion to predict accurate hand waypoints. 
+          </p>
+          <video id="train" autoplay muted loop playsinline height="60%">
+            <source src="./static/videos/denoising2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Training Strategy. -->
+    </div>
+</div>
+</section>
+  
 
   
 <section class="section">
