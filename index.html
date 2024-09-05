@@ -176,12 +176,12 @@
 
     <div class="columns is-centered">
 
-      <!-- Training Strategy. -->
+      <!-- Semantic Extraction. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Training Strategy</h2>
+          <h2 class="title is-3">Semantic Extraction</h2>
           <p>
-            We use angle and length constraints to optimize the directionality and stabability of predicted hand trajectories.
+            We use the foundation model for extracting semantic features sensitive to hand-scenario relationships.
           </p>
           <video id="train" autoplay muted loop playsinline height="60%">
             <source src="./static/videos/supervision.mp4"
@@ -191,7 +191,29 @@
       </div>
       <!--/ Training Strategy. -->
 
-      <!-- MDSS. -->
+      <!-- Denoising. -->
+      <div class="column">
+        <h2 class="title is-3">Denoising to Future Trajectories</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Motion-aware Mamba is proposed to gradually denoise latent features in the latent diffusion to predict accurate hand waypoints. 
+            </p>
+            <video id="mdss" autoplay muted loop playsinline height="60%">
+              <source src="./static/videos/mdss.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+    <!-- MDSS. -->
       <div class="column">
         <h2 class="title is-3">Motion-Driven Selective Scan</h2>
         <div class="columns is-centered">
@@ -209,6 +231,23 @@
       </div>
     </div>
     <!--/ MDSS. -->
+    
+      <!-- Training Strategy. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Training Strategy</h2>
+          <p>
+            We use angle and length constraints to optimize the directionality and stabability of predicted hand trajectories.
+          </p>
+          <video id="train" autoplay muted loop playsinline height="60%">
+            <source src="./static/videos/supervision.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Training Strategy. -->
+
+
 </section>
 
 
