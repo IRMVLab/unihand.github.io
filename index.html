@@ -137,19 +137,20 @@
             </div>
           </div>
 
-
           <div class="column has-text-centered">
-            <h2 class="title is-3" style="text-align: center;">
-              MMTwin Architecture
-            </h2>
-            <img src="./static/images/mmtwin_arch.png"
-                 class="architecture-image"
-                 alt="architecture-image image."
-                 style="width: 50%; display: block; margin: 0 auto;"/>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <h2 class="title is-3">MMTwin Architecture</h2>
+                  <img src="./static/images/mmtwin_arch.png"
+                   class="architecture-image"
+                   alt="architecture-image image."
+                   style="width: 50%; display: block; margin: 0 auto;"/>
                 <div class="content has-text-justified">
                   <p>
                   Our proposed MMTwin (a) extracts features from multimodal data, and (b) decouples predictions of future camera egomotion features and 3D hand trajectories by novel twin diffusion models. The vanilla Mamba (VM) is used for denoising in the egomotion diffusion. We further design a new denoising model in HTP diffusion with (c) a hybrid Mamba-Transformer module (HMTM), encompassing the egomotion-aware Mamba (EAM) blocks and (d) the structure-aware Transformer (SAT).
                 </div>
+              </div>
+            </div>
           </div>
 
 
