@@ -153,6 +153,35 @@
             </div>
           </div>
 
+          <div class="columns is-centered">
+
+            <div class="column">
+              <div class="content">
+                <video id="exp1" autoplay muted loop playsinline height="60%">
+                  <source src="./static/videos/sample1_nomdss.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+      
+            <div class="column">
+              <div class="content">
+                <video id="exp2" autoplay muted loop playsinline height="60%">
+                  <source src="./static/videos/sample2_nomdss.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+      
+            <div class="column">
+              <div class="content">
+                <video id="exp3" autoplay muted loop playsinline height="60%">
+                  <source src="./static/videos/sample3_nomdss.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+      
+        </div>
+
+          
 
           <div class="column has-text-centered">
               <h2 class="title is-3">Multifinger Predictions</h2>
@@ -180,383 +209,6 @@
 
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-    <!-- Semantic Extraction -->
-      <div class="column">
-        <h2 class="title is-3">Semantic Extraction</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              We use the foundation model for extracting semantic features sensitive to hand-scenario relationships. Visual grounding allows us to use text prompt to achieve task-specific. 
-            </p>
-            <video id="mdss" autoplay muted loop playsinline height="60%">
-              <source src="./static/videos/grounding.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    <!--/ MDSS. -->
-    
-      <!-- Denoising to Future Traj -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Denoising to Future Trajs</h2>
-          <p>
-            Motion-aware Mamba is proposed to gradually denoise latent features in the latent diffusion to predict accurate hand waypoints. 
-          </p>
-          <video id="train" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/denoising2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Training Strategy. -->
-    </div>
-</div>
-</section>
-  
-
-  
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-    <!-- MDSS. -->
-      <div class="column">
-        <h2 class="title is-3">Motion-Driven Selective Scan</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              MDSS is proposed in our motion-aware Mamba to achieve diffusion denoising under egomotion guidance. 
-            </p>
-            <video id="mdss" autoplay muted loop playsinline height="60%">
-              <source src="./static/videos/mdss.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    <!--/ MDSS. -->
-    
-      <!-- Training Strategy. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Training Strategy</h2>
-          <p>
-            We use angle and length constraints to optimize the directionality and stabability of predicted hand trajectories.
-          </p>
-          <video id="train" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/supervision.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Training Strategy. -->
-    </div>
-</div>
-</section>
-
-
-<section class="section">
-  <h2 class="title is-3" style="text-align: center;">
-    MADiff vs. AR and iter-NAR paradigms
-  </h2>
-  <img src="./static/images/paradigm.png"
-       class="architecture-image"
-       alt="architecture-image image."
-       style="width: 40%; display: block; margin: 0 auto;"/>
-  <h2 class="subtitle has-text-centered">
-        MADiff inference with Motion-Aware Mamba and CDC operation
-  </h2>
-</section>
-
-  
-  <section class="section">
-  <div class="container is-max-desktop">
-
-    <h2 class="title is-3" style="text-align: center;">
-      Additional HTP Results
-    </h2>
-
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <video id="exp1" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/exp1.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp2" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/exp2.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp3" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/exp3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <video id="exp4" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/exp4.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp5" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/exp5.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp6" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/exp6.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-    </div>
-    <p style="text-align: center;">
-      The starting point of the predicted trajectory does not align with the hand in the image because here we use the first frame of the video clip as the prediction canvas, while the predicted trajectory’s starting point is at the timestamp close to the last frame of the video. Please refer to more results of comparison with baselines in our <a href="https://arxiv.org/abs/2409.02638">our paper</a>.
-    </p>
-  </div>
-</section>
-
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <h2 class="title is-3" style="text-align: center;">
-      Multiple Samples by MADiff
-    </h2>
-
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <video id="exp1" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample1.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp2" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample2.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp3" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="columns is-centered">
-      
-      <div class="column">
-        <div class="content">
-          <video id="exp3" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample4.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp3" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample5.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp3" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample6.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      
-    </div>
-    <p style="text-align: center;">
-      MADiff follows a generative scheme and thus can generate trajectory clusters by multiple sampling from Gaussian noise.
-    </p>
-  </div>
-</section>
-
-
-  
- <section class="section">
-  <div class="container is-max-desktop">
-
-    <h2 class="title is-3" style="text-align: center;">
-      Multiple Samples by Models without MDSS
-    </h2>
-
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <video id="exp1" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample1_nomdss.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp2" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample2_nomdss.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp3" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample3_nomdss.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="columns is-centered">
-      
-      <div class="column">
-        <div class="content">
-          <video id="exp3" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample4_nomdss.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp3" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample5_nomdss.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="content">
-          <video id="exp3" autoplay muted loop playsinline height="60%">
-            <source src="./static/videos/sample6_nomdss.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      
-    </div>
-    <p style="text-align: center;">
-      The models agnostic to camera egomotion tend to accumulate prediction errors due to motion gaps increasing along the time axis. The final position and overall shape similarity are also not as good as those of the model with MDSS.
-    </p>
-  </div>
-</section> 
-
-
-
-  
-<!-- specific verb -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3" style="text-align: center;">
-      Text Prompt Tuning
-    </h2>
-
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="columns is-multiline">
-          <div class="column is-half">
-            <div class="content">
-              <video id="exp1" autoplay muted loop playsinline width="100%">
-                <source src="./static/videos/without_verb_crop.mp4" type="video/mp4">
-              </video>
-              <p style="text-align: center; font-size: 0.9em; font-family: Verdana, sans-serif;">
-                “hand”
-              </p>
-            </div>
-          </div>
-          <div class="column is-half">
-            <div class="content">
-              <video id="exp2" autoplay muted loop playsinline width="100%">
-                <source src="./static/videos/with_verb_crop.mp4" type="video/mp4">
-              </video>
-              <p style="text-align: center; font-size: 0.9em; font-family: Verdana, sans-serif;">
-                “hand, which is scooping”
-              </p>
-            </div>
-          </div>
-          <div class="column is-half">
-            <div class="content">
-              <video id="exp3" autoplay muted loop playsinline width="100%">
-                <source src="./static/videos/without_verb_crop_2.mp4" type="video/mp4">
-              </video>
-              <p style="text-align: center; font-size: 0.9em; font-family: Verdana, sans-serif;">
-                “hand”
-              </p>
-            </div>
-          </div>
-          <div class="column is-half">
-            <div class="content">
-              <video id="exp4" autoplay muted loop playsinline width="100%">
-                <source src="./static/videos/with_verb_crop_2.mp4" type="video/mp4">
-              </video>
-              <p style="text-align: center; font-size: 0.9em; font-family: Verdana, sans-serif;">
-                “hand, which is throwing”
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="content">
-          <figure style="margin-bottom: 0;">
-            <img src="./static/images/verb3.png" alt="Image description" style="width: 100%;">
-          </figure>
-          <p style="text-align: center; font-size: 0.9em; font-family: Verdana, sans-serif;">
-               Text prompt tuning helps to extract action-specific semantics, thus improving corresponding HTP performance.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
   
