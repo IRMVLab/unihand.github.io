@@ -42,21 +42,9 @@
 </head>
 <body>
 
-<style>
-  /* 缩小两个 section 之间的间距 */
-  .section + .section {
-    margin-top: 0;
-    padding-top: 0;
-  }
-  
-  /* 或者更精确地控制 */
-  .publication-section + .motivation-section {
-    margin-top: 20px; /* 调整为想要的间距值 */
-  }
-</style>
 
 
-<section class="section publication-section">
+<section class="section">
   <div class="hero-body">
       <div class="columns is-centered">
         <div class="column has-text-centered">
@@ -121,12 +109,12 @@
   </div>
 </section>
 
-<section class="section motivation-section" style="text-align: center;">
+<section class="section" style="text-align: center;">
   <img src="./static/images/motivation.png"
        class="architecture-image"
        alt="architecture-image image."
        style="width: 40%; display: block; margin: 0 auto;"/>
-  <h2 class="subtitle has-text-centered" style="width: 60%; margin: 0 auto;">
+  <h2 class="subtitle has-text-centered" style="width: 70%; margin: 0 auto;">
     What about considering <strong>the synergy between hand movements and headset camera egomotion</strong> within the future interaction process?
   </h2>
 </section>
@@ -139,7 +127,7 @@
       <video id="teaser" autoplay muted loop playsinline height="50%" style="width: 60%;">
         <source src="./static/videos/compressed_mmtwin_video.mp4" type="video/mp4">
       </video>
-       <h2 class="subtitle has-text-centered" style="width: 60%; margin: 0 auto;">
+       <h2 class="subtitle has-text-centered" style="width: 70%; margin: 0 auto;">
         MMTwin incorporates RGB images, point clouds, text prompts, and past hand waypoints to accurately predict future 3D hand trajectories in egocentric views.
       </h2>
     </div>
